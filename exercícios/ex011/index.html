@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagens Dinâmina</h1>
+    <p>tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="img/pequeno.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="img/medio.png" type="image/png">
+        <img src="img/grande.png" alt="Imagem flexível">
+    </picture>
+    <h1>Repoduzindo Áudio</h1>
+    <p>Vamos aprender a repoduzir áudio em HTML5.</p>
+    <audio preload="metadata" controls>
+        <source src="mídia/nija_not_one_of_them_visualizer_mp3_48243.mp3" type="audio/mpeg">
+        <source src="mídia/nija_not_one_of_them_visualizer_mp3_48243.ogg" type="audio/ogg">
+        <source src="mídia/nija_not_one_of_them_visualizer_mp3_48243.wav" type="audio/wav">
+
+        <p>Infelizmente o seu navegador não consegue repoduzir áudios. <a href="mídia/nija_not_one_of_them_visualizer_mp3_48243.mp3" download="audio/mp3" target="_blank" rel="external">Clica aqui para baixar o arquivo MP3</a></p>
+    </audio>
+</body>
+</html>
