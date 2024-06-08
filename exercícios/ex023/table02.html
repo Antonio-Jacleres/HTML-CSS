@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas em HTML</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 1000px;
+            border-collapse: collapse;
+            position: relative;
+
+        }
+        caption{
+            font-size: 2em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgrey;
+        }
+        .num{
+            text-align: right;
+        }
+        thead{
+            background-color: darkgray;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: darkgray;
+
+        }
+        tfoot{
+            background-color: rgb(150, 149, 149);
+        }
+        tbody > tr:nth-child(odd){
+            background-color: white;
+        }
+        tbody > tr:nth-child(even){
+            background-color: lightgrey;
+        }
+        td, th{
+            border: 1px solid black;
+        }
+        #foo{
+            text-align: left;
+        }
+        #center{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        Anotamia para tabelas Grande
+            TABLE
+                THEAD
+                    TR, TH, TD
+                TBODY
+                    TR, TH, TD
+                TFOOT
+                    TR, TH, TD
+        
+    -->
+    <table>
+        <caption>
+            População das Unidades Reginal 
+        </caption>
+        <thead>
+            <th scope="col">Provívcias</th>
+            <th scope="col">Código ISO <sup>[9]</sup></th>
+            <th scope="col">Capital</th>
+            <th scope="col">Área (km<sup>2</sup>)<sup>[10][nota 1«2]</sup> </th>
+            <th scope="col">População (Censo 2014)</th>
+            <th scope="col">Municípios<sup>[12]</sup></th>
+            <th scope="col">Comunas<sup>[12]</sup></th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Bengo</td>
+                <td id="center">BGO</td>
+                <td>Caxito</td>
+                <td class="num">15 506</td>
+                <td class="num">356 641</td>
+                <td class="num">6</td>
+                <td class="num">23</td>
+            </tr>
+            <tr>
+                <td>Benguela</td>
+                <td id="center">BGU</td>
+                <td>Benguela</td>
+                <td class="num">31 788</td>
+                <td class="num">2 231 385</td>
+                <td class="num">10</td>
+                <td class="num">38</td>
+            </tr>
+            <tr>
+                <td>Bié</td>
+                <td id="center">BIE</td>
+                <td>Cuíto</td>
+                <td class="num">70 314</td>
+                <td class="num">1 455 255</td>
+                <td class="num">9</td>
+                <td class="num">39</td>
+            </tr>
+            <tr>
+                <td>Cabinda</td>
+                <td id="center">CAB</td>
+                <td>Cabinda</td>
+                <td class="num">7 270</td>
+                <td class="num">716 076</td>
+                <td class="num">4</td>
+                <td class="num">12</td>
+            </tr>
+            <tr>
+               <td>Cuando-Cubango</td>
+               <td id="center">CCU</td>
+               <td>Menongue</td>
+               <td class="num">199 049</td>
+               <td class="num">534 002</td>
+               <td class="num">9</td>
+               <td class="num">30</td>
+            </tr>
+            <tr>
+                <td>Cuanza Norte</td>
+                <td id="center">CNO</td>
+                <td>Ndalatando</td>
+                <td class="num">24 190</td>
+                <td class="num">443 386</td>
+                <td class="num">10</td>
+                <td class="num">30</td>
+            </tr>
+            <tr>
+               <td>Cuanza Sul</td>
+               <td id="center">CUS</td>
+               <td>Sumbe</td>
+               <td class="num">55 660</td>
+               <td class="num">1 881 873</td>
+               <td class="num">12</td>
+               <td class="num">36</td>
+            </tr>
+            <tr>
+                <td>Cunene</td>
+                <td id="center">CNN</td>
+                <td>Ondijiva</td>
+                <td class="num">89 342</td>
+                <td class="num">990 087</td>
+                <td class="num">6</td>
+                <td class="num">20</td>
+            </tr>
+            <tr>
+                <td>Huambo</td>
+                <td id="center">HUA</td>
+                <td>Huambo</td>
+                <td class="num">34 274</td>
+                <td class="num">2 019 555</td>
+                <td class="num">11</td>
+                <td class="num">37</td>
+            </tr>
+            <tr>
+                <td>Huíla</td>
+                <td id="center">HUI</td>
+                <td>Lubango</td>
+                <td class="num">75 002</td>
+                <td class="num">2 497 422</td>
+                <td class="num">14</td>
+                <td class="num">37</td>
+            </tr>
+            <tr>
+                <td>Luanda</td>
+                <td id="center">LUA</td>
+                <td>Luanda</td>
+                <td class="num">18 283</td>
+                <td class="num">6 945 386</td>
+                <td class="num">9</td>
+                <td class="num">14</td>
+            </tr>
+            <tr>
+                <td>Lunda Norte</td>
+                <td id="center">LNO</td>
+                <td>Dundo</td>
+                <td class="num">102 783</td>
+                <td class="num">862 566</td>
+                <td class="num">10</td>
+                <td class="num">24</td>
+            </tr>
+            <tr>
+                <td>Lunda Sul</td>
+                <td id="center">LSU</td>
+                <td>Saurimo</td>
+                <td class="num">45 649</td>
+                <td class="num">537 587</td>
+                <td class="num">4</td>
+                <td class="num">14</td>
+            </tr>
+            <tr>
+                <td>Malanje</td>
+                <td id="center">MAL</td>
+                <td>Malanje</td>
+                <td class="num">97 602</td>
+                <td class="num">986 363</td>
+                <td class="num">14</td>
+                <td class="num">52</td>
+            </tr>
+            <tr>
+                <td>Moxico</td>
+                <td id="center">MOX</td>
+                <td>Luena</td>
+                <td class="num">223 023</td>
+                <td class="num">758 568</td>
+                <td class="num">9</td>
+                <td class="num">27</td>
+            </tr>
+            <tr>
+                <td>Namibe</td>
+                <td id="center">NAM</td>
+                <td>Moçâmedes</td>
+                <td class="num">58 137</td>
+                <td class="num">495 326</td>
+                <td class="num">5</td>
+                <td class="num">16</td>
+            </tr>
+            <tr>
+                <td>Uíge</td>
+                <td id="center">UIG</td>
+                <td>Uíge</td>
+                <td class="num">58 698</td>
+                <td class="num">1 483 118</td>
+                <td class="num">16</td>
+                <td class="num">44</td>
+            </tr>
+            <tr>
+                <td>Zaire</td>
+                <td id="center">ZAI</td>
+                <td>Mabanza Confgo</td>
+                <td class="num">40 130</td>
+                <td class="num">594 428</td>
+                <td class="num">6</td>
+                <td class="num">25</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th id="foo" scope="row">Total</th>
+            <th>AO</th>
+            <th id="foo">Luanda</th>
+            <th class="num">1 246 700</th>
+            <th class="num">25 789 024</th>
+            <th class="num">164</th>
+            <th  class="num">518</th>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sequi iste possimus, impedit sunt ad accusamus cumque voluptate incidunt quasi, alias veniam, illum laborum nostrum! Amet aspernatur nihil nulla impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident iste perspiciatis non eum dignissimos! Repellat voluptatibus, voluptate impedit deserunt non libero neque ab enim esse, vitae, aspernatur odit quae praesentium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sapiente, nisi dignissimos veritatis molestias atque mollitia animi possimus suscipit sunt delectus nesciunt doloribus quas accusantium sit doloremque sequi iusto ea?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sequi iste possimus, impedit sunt ad accusamus cumque voluptate incidunt quasi, alias veniam, illum laborum nostrum! Amet aspernatur nihil nulla impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident iste perspiciatis non eum dignissimos! Repellat voluptatibus, voluptate impedit deserunt non libero neque ab enim esse, vitae, aspernatur odit quae praesentium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sapiente, nisi dignissimos veritatis molestias atque mollitia animi possimus suscipit sunt delectus nesciunt doloribus quas accusantium sit doloremque sequi iusto ea?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sequi iste possimus, impedit sunt ad accusamus cumque voluptate incidunt quasi, alias veniam, illum laborum nostrum! Amet aspernatur nihil nulla impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident iste perspiciatis non eum dignissimos! Repellat voluptatibus, voluptate impedit deserunt non libero neque ab enim esse, vitae, aspernatur odit quae praesentium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sapiente, nisi dignissimos veritatis molestias atque mollitia animi possimus suscipit sunt delectus nesciunt doloribus quas accusantium sit doloremque sequi iusto ea?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sequi iste possimus, impedit sunt ad accusamus cumque voluptate incidunt quasi, alias veniam, illum laborum nostrum! Amet aspernatur nihil nulla impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident iste perspiciatis non eum dignissimos! Repellat voluptatibus, voluptate impedit deserunt non libero neque ab enim esse, vitae, aspernatur odit quae praesentium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sapiente, nisi dignissimos veritatis molestias atque mollitia animi possimus suscipit sunt delectus nesciunt doloribus quas accusantium sit doloremque sequi iusto ea?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sequi iste possimus, impedit sunt ad accusamus cumque voluptate incidunt quasi, alias veniam, illum laborum nostrum! Amet aspernatur nihil nulla impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident iste perspiciatis non eum dignissimos! Repellat voluptatibus, voluptate impedit deserunt non libero neque ab enim esse, vitae, aspernatur odit quae praesentium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sapiente, nisi dignissimos veritatis molestias atque mollitia animi possimus suscipit sunt delectus nesciunt doloribus quas accusantium sit doloremque sequi iusto ea?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sequi iste possimus, impedit sunt ad accusamus cumque voluptate incidunt quasi, alias veniam, illum laborum nostrum! Amet aspernatur nihil nulla impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident iste perspiciatis non eum dignissimos! Repellat voluptatibus, voluptate impedit deserunt non libero neque ab enim esse, vitae, aspernatur odit quae praesentium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sapiente, nisi dignissimos veritatis molestias atque mollitia animi possimus suscipit sunt delectus nesciunt doloribus quas accusantium sit doloremque sequi iusto ea?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sequi iste possimus, impedit sunt ad accusamus cumque voluptate incidunt quasi, alias veniam, illum laborum nostrum! Amet aspernatur nihil nulla impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident iste perspiciatis non eum dignissimos! Repellat voluptatibus, voluptate impedit deserunt non libero neque ab enim esse, vitae, aspernatur odit quae praesentium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sapiente, nisi dignissimos veritatis molestias atque mollitia animi possimus suscipit sunt delectus nesciunt doloribus quas accusantium sit doloremque sequi iusto ea?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sequi iste possimus, impedit sunt ad accusamus cumque voluptate incidunt quasi, alias veniam, illum laborum nostrum! Amet aspernatur nihil nulla impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident iste perspiciatis non eum dignissimos! Repellat voluptatibus, voluptate impedit deserunt non libero neque ab enim esse, vitae, aspernatur odit quae praesentium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sapiente, nisi dignissimos veritatis molestias atque mollitia animi possimus suscipit sunt delectus nesciunt doloribus quas accusantium sit doloremque sequi iusto ea?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sequi iste possimus, impedit sunt ad accusamus cumque voluptate incidunt quasi, alias veniam, illum laborum nostrum! Amet aspernatur nihil nulla impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident iste perspiciatis non eum dignissimos! Repellat voluptatibus, voluptate impedit deserunt non libero neque ab enim esse, vitae, aspernatur odit quae praesentium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sapiente, nisi dignissimos veritatis molestias atque mollitia animi possimus suscipit sunt delectus nesciunt doloribus quas accusantium sit doloremque sequi iusto ea?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sequi iste possimus, impedit sunt ad accusamus cumque voluptate incidunt quasi, alias veniam, illum laborum nostrum! Amet aspernatur nihil nulla impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident iste perspiciatis non eum dignissimos! Repellat voluptatibus, voluptate impedit deserunt non libero neque ab enim esse, vitae, aspernatur odit quae praesentium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sapiente, nisi dignissimos veritatis molestias atque mollitia animi possimus suscipit sunt delectus nesciunt doloribus quas accusantium sit doloremque sequi iusto ea?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sequi iste possimus, impedit sunt ad accusamus cumque voluptate incidunt quasi, alias veniam, illum laborum nostrum! Amet aspernatur nihil nulla impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident iste perspiciatis non eum dignissimos! Repellat voluptatibus, voluptate impedit deserunt non libero neque ab enim esse, vitae, aspernatur odit quae praesentium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sapiente, nisi dignissimos veritatis molestias atque mollitia animi possimus suscipit sunt delectus nesciunt doloribus quas accusantium sit doloremque sequi iusto ea?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sequi iste possimus, impedit sunt ad accusamus cumque voluptate incidunt quasi, alias veniam, illum laborum nostrum! Amet aspernatur nihil nulla impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident iste perspiciatis non eum dignissimos! Repellat voluptatibus, voluptate impedit deserunt non libero neque ab enim esse, vitae, aspernatur odit quae praesentium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sapiente, nisi dignissimos veritatis molestias atque mollitia animi possimus suscipit sunt delectus nesciunt doloribus quas accusantium sit doloremque sequi iusto ea?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sequi iste possimus, impedit sunt ad accusamus cumque voluptate incidunt quasi, alias veniam, illum laborum nostrum! Amet aspernatur nihil nulla impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident iste perspiciatis non eum dignissimos! Repellat voluptatibus, voluptate impedit deserunt non libero neque ab enim esse, vitae, aspernatur odit quae praesentium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sapiente, nisi dignissimos veritatis molestias atque mollitia animi possimus suscipit sunt delectus nesciunt doloribus quas accusantium sit doloremque sequi iusto ea?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sequi iste possimus, impedit sunt ad accusamus cumque voluptate incidunt quasi, alias veniam, illum laborum nostrum! Amet aspernatur nihil nulla impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident iste perspiciatis non eum dignissimos! Repellat voluptatibus, voluptate impedit deserunt non libero neque ab enim esse, vitae, aspernatur odit quae praesentium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sapiente, nisi dignissimos veritatis molestias atque mollitia animi possimus suscipit sunt delectus nesciunt doloribus quas accusantium sit doloremque sequi iusto ea?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sequi iste possimus, impedit sunt ad accusamus cumque voluptate incidunt quasi, alias veniam, illum laborum nostrum! Amet aspernatur nihil nulla impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident iste perspiciatis non eum dignissimos! Repellat voluptatibus, voluptate impedit deserunt non libero neque ab enim esse, vitae, aspernatur odit quae praesentium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sapiente, nisi dignissimos veritatis molestias atque mollitia animi possimus suscipit sunt delectus nesciunt doloribus quas accusantium sit doloremque sequi iusto ea?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sequi iste possimus, impedit sunt ad accusamus cumque voluptate incidunt quasi, alias veniam, illum laborum nostrum! Amet aspernatur nihil nulla impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident iste perspiciatis non eum dignissimos! Repellat voluptatibus, voluptate impedit deserunt non libero neque ab enim esse, vitae, aspernatur odit quae praesentium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sapiente, nisi dignissimos veritatis molestias atque mollitia animi possimus suscipit sunt delectus nesciunt doloribus quas accusantium sit doloremque sequi iusto ea?</p>
+</body>
+</html>
