@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframe</title>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    iframe#tela{
+        width: 95vw;
+        border: 2px solid black;
+        height: 400px;
+    }
+</style>
+<body>
+    <h1>Navegaçao no iframe</h1>
+    <ul>
+        <li><a href="pagina-extras/page.01.html" target="frame">Primeira</a></li>
+        <li><a href="pagina-extras/page002.html" target="frame">Seguanda</a></li>
+        <li><a href="pagina-extras/page003.html" target="frame">Terceira</a></li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum natus officiis illum sit vel, autem optio nisi nemo, mollitia incidunt qui aliquam recusandae odio laboriosam consectetur aliquid! Cumque, ullam reprehenderit. </p>
+
+    <iframe id="tela" name="frame" srcdoc="<h1>Clique nos links acima</h1>  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil iste minima consequuntur amet enim quidem veritatis doloremque officiis aspernatur a. Laboriosam dolor ad debitis odio rem. Qui cum sint sequi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi architecto aut delectus optio minus ullam alias, omnis nemo. Inventore modi odio eveniet id qui numquam sed minima doloremque natus neque.</p>  <img src='imagens/uniteicon.png' alt='unitel'> "">
+        <p>Infelizmente o seu navegador não é compatível com iframe</p>
+    </iframe>
+    <img src="" alt="">
+
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil iste minima consequuntur amet enim quidem veritatis doloremque officiis aspernatur a. Laboriosam dolor ad debitis odio rem. Qui cum sint sequi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi architecto aut delectus optio minus ullam alias, omnis nemo. Inventore modi odio eveniet id qui numquam sed minima doloremque natus neque.</p>
+</body>
+</html>
