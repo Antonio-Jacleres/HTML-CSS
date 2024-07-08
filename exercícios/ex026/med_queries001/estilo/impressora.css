@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/*Estilo para Inpressoras*/
+*{
+    padding: 10px;
+    margin: 10px;
+}
+html{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+menu{
+    display: none;
+    
+}
+article p{
+    text-align: justify;
+}
+article{
+    width: 100vw;
+}
+article::after{
+    content: "Esse artigo foi impresso atrvé do site www.antonio-jaclere.github.io/";
+}
